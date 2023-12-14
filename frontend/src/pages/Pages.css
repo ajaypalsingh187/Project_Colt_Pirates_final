@@ -1,0 +1,410 @@
+.App {
+    min-height: 100vh;
+    position: relative;
+}
+/* The About page */
+#About {
+    width: 1000px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+#About h1 {
+    font-family: bebasFont;
+    font-weight: 500;
+    text-align: center;     
+    font-size: 35px;
+    margin-bottom: 0;
+    text-decoration: underline 2px;
+    text-underline-offset: 8px;
+}
+#About h2 {
+    font-family: bebasFont;
+    font-weight: 500;
+    margin: 0 0 4px;
+    text-decoration: underline 2px;
+    text-underline-offset: 4px;
+}
+#About h3 {
+    font-family: bebasFont;
+    font-weight: 500;
+    margin: 40px auto 20px;
+    text-align: center;
+    font-size: 28px;
+}
+#About p {
+    margin: 0;
+}
+#About span {
+    font-weight: 700;
+}
+.About__box {
+    margin-bottom: 20px;
+}
+.About__box ul {
+    padding-left: 25px;
+    margin: 3px;
+}
+
+@media(max-width: 1100px) {
+    #About {
+        width: 90vw;
+        padding-bottom: 80px;
+    }
+}
+  
+/* Financing page */
+#Financing {
+    width: 800px;
+    margin: 0 auto;
+}
+#Financing h1 {
+    font-family: bebasFont;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: underline 2px;
+    text-underline-offset: 8px;
+}
+#Financing li {
+    margin: 20px 0;
+}   
+
+@media(max-width: 1000px) {
+    #Financing {
+        width: 90vw;
+        padding-bottom: 80px;
+    }
+}
+
+/* Offer page */
+.car-windows-area {
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+.car-windows-area h1 {
+    font-family: bebasFont;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: underline 2px;
+    text-underline-offset: 8px;
+}
+@media(max-width: 1200px) {
+    .car-windows-area {
+        width: 900px;
+    }
+}
+@media(max-width: 910px) {
+    .car-windows-area {
+        width: 610px;
+    }
+}
+@media(max-width: 620px) {
+    .car-windows-area {
+        width: 285px;
+    }
+    #Offer .car-windows-area {
+        padding-bottom: 70px;
+    }
+}
+@media(max-width: 450px) {
+    .car-windows-area {
+        padding-bottom: 70px;
+    }
+    #Offer .car-windows-area {
+        padding-bottom: 90px;
+    }
+}
+
+/* Contact page */
+.contact-area {
+    font-family: bebasFont;
+    width: 1000px;
+    margin: 0 auto 140px;
+    display: flex;
+}
+.contact-area__info,
+.contact-area__form {
+    display: inline-block;
+}
+.contact-area__form form {
+    width: 580px;
+}
+.contact-area__form form input, 
+.contact-area textarea {
+    font-family: bebasFont;
+    font-size: 18px;
+    width: 550px;
+    height: 26px;
+    border-radius: 5px;
+    margin: 3px 0;
+    padding-left: 5px;
+    padding-top: 3px;
+    border: 2px solid black;
+}
+.contact-area__form form textarea {
+    height: 180px;
+    line-height: 30px;
+}
+.contact-area h3 {
+    letter-spacing: 0.1em;
+    font-size: 22px;
+    margin: 17px 0 10px;
+}
+.contact-area iframe {
+    display: block;
+    width: 100%;
+    height: 280px;
+    margin-top: 10px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-radius: 5px;
+}
+.contact-area__info {
+    display: block;
+    width: 420px;
+}
+.contact-area__info img {
+    height: 15px;
+    margin-right: 8px;
+    position: relative;
+    top: 1px;
+}
+.contact-area__info span {
+    line-height: 28px;
+    font-size: 18px;    
+}
+#contact-area__button {
+    width: 66px;
+    height: 30px;
+    line-height: 24px;
+    background-color: white;
+    color: black;
+    padding: 3px 11px;
+    /* Styling above added because <p> alement substituted a <button> for Safari Browsers */
+    font-family: bebasFont;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    border: 2px solid black;
+    border-radius: 4px;
+    display: block;
+    margin: 10px auto;
+    transition-property: color;
+    transition-property: background-color;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+#contact-area__button:hover {
+    background-color: black;
+    color: white;
+}
+@media (max-width: 1050px) {
+    .contact-area {
+        width: 600px;
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        padding-bottom: 80px;
+    }
+    .contact-area__info {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .contact-area__info h3, 
+    .contact-area__info div {
+        text-align: center;
+    }
+    .contact-area__form h3 {
+        text-align: center;
+    }
+}
+@media (max-width: 660px) {
+    .contact-area,
+    .contact-area__info,
+    .contact-area__info div,
+    .contact-area__form {
+        margin: 0;
+        width: 100vw;
+    }
+    .contact-area__form form {
+        width: 85vw;
+        margin: 0 auto;
+    }
+    .contact-area__form form input, 
+    .contact-area__form textarea {
+        width: 80vw;
+    }
+    .contact-area iframe {
+        width: 96%;
+        margin: 0 auto;
+    }
+}
+
+/* Buy page */
+#Buy {
+    padding-bottom: 80px;
+}
+#Buy__area {
+    width: 1200px;
+    margin: 40px auto 0px;
+    background: hsl(0, 0%, 90%);
+    box-shadow: 5px 5px 5px 5px hsl(0, 0%, 80%);
+}
+#Buy__area h3 {
+    font-family: bebasFont;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    margin: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+#Buy__area p {
+    margin: 5px;
+    padding-left: 5px;
+}
+#Buy__area form {
+    display: flex;
+    height: 200px;
+}
+#Buy__area form span {
+    width: 400px;
+}
+#Buy__area input {
+    font-family: bebasFont;
+    font-size: 18px;
+    height: 26px;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: block;
+    margin: 5px auto;
+    padding-left: 5px;
+    padding-top: 3px;
+    width: 370px;
+}
+#Buy__area textarea {
+    font-family: bebasFont;
+    font-size: 18px;
+    width: 370px;
+    height: 103px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 5px 5px 2px;
+}
+#third-span__attachments input {
+    margin: 3px;
+    padding: 2px;
+    width: 180px;
+    height: 22px;
+    font-size: 14px;
+    display: inline-block;
+}
+#Buy__area #Buy__area__button {
+    max-width: 70px;
+    height: 30px;
+    line-height: 24px;
+    position: relative;
+    bottom: 37.5px;
+    left: 90px;
+    background-color: white;
+    color: black;
+    /* Styling above added because <input> alement substituted a <button> for Safari Browsers */
+    font-family: bebasFont;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    border-radius: 4px;
+    transition-property: color;
+    transition-property: background-color;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+#Buy__area #Buy__area__button:hover {
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 1200px) {
+    #Buy__area {
+        width: 800px;
+        height: 500px;
+        margin-bottom: 0px;
+    }
+    #Buy__area form {
+        flex-wrap: wrap; 
+    }
+    #Buy__area #third-span {
+        width: 800px;
+    }
+    #Buy__area textarea {
+        display: block;
+        width: 780px;
+        margin: 0 auto;
+    }
+    #Buy__area #third-span__attachments {
+        width: 615px;
+        margin: 0 auto;
+        padding: 3px 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #Buy__area #third-span__attachments input {
+        width: 190px;
+    }
+    #Buy__area #Buy__area__button {
+        position: static;
+    }
+}
+@media (max-width: 800px) {
+    #Buy__area {
+        width: 550px;
+        height: 530px;
+    }
+    .column-inputs {
+        width: 270px !important;
+    }
+    #Buy #third-span {
+        width: 540px;
+    }
+    #Buy__area input {
+        width: 250px;
+    }
+    #Buy__area textarea {
+        width: 525px;
+    }
+    #Buy__area #third-span__attachments {
+        width: 410px;
+        margin: 0 0 0 50px;
+        padding: 3px 0px;
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+    #Buy__area #Buy__area__button {
+        position: relative;
+        left: 90px;
+        bottom: 40px;
+    }
+}
+@media (max-width: 570px) {
+    #Buy__area {
+        width: 270px;
+        height: 870px;
+    }
+    #Buy #third-span {
+        width: 270px;
+    }
+    #Buy__area textarea {
+        width: 250px;
+    }
+    #Buy__area #third-span__attachments {
+        width: 200px;
+        margin: 3px auto;
+        padding: 3px 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #Buy__area #third-span #Buy__area__button {
+        display: block;
+        position: static;
+        margin: 0 auto;
+    }
+}

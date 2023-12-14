@@ -1,0 +1,30 @@
+.Footer {
+    background-color: hsl(0, 0%, 40%);
+    color: white;
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    font-family: bebasFont;
+    margin-top: 40px;
+    position: absolute;
+    bottom: 10;
+}
+.Footer::before {
+    content: 'Copyright © 2023 Colt Pirates';
+    float: left;
+    margin-left: 8px;
+}
+.Footer::after {
+    content: 'Colt Pirates';
+    float: right;
+    margin-right: 25px;
+    margin-left: 8px;
+}
+
+@media (max-width: 450px) {
+    .Footer {
+        font-size: 13px;
+        height: 60px;
+        line-height: 30px;
+    }
+}

@@ -1,0 +1,197 @@
+.container-slider {
+    width: 790px;
+    height: 500px;
+    position: relative;
+    display: inline-block;
+}
+.ImageSlide {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    z-index: 3;
+    /* transition: all 800ms linear; */
+    transition: background-image 800ms linear;
+}
+.container-slider__left-arrow,
+.container-slider__right-arrow {
+    cursor: pointer;
+    position: absolute;
+    font-size: 150px; 
+    top: -20px;
+    top: 0px;
+    height: 100%;   
+    
+    display: flex;
+    align-items: center;
+    
+    color: hsl(0, 100%, 40%, 0);
+    z-index: 4;
+}
+.container-slider__left-arrow p,
+.container-slider__right-arrow p {
+    position: relative;
+    bottom: 20px;
+}
+.container-slider__right-arrow {
+    right: 0;
+}
+.ImageSlide:hover  ~ .container-slider__right-arrow,     
+.ImageSlide:hover  ~ .container-slider__left-arrow,
+.container-slider__left-arrow:hover,
+.container-slider__right-arrow:hover {      
+    background-color: hsl(0, 0%, 0%, 0.4);
+    color: hsl(0, 100%, 40%);
+    transition-duration: 1s;
+}
+.container-slider__dots-area {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.container-slider__dots-area div {
+    margin: 3px 1px;
+    cursor: pointer;
+    font-size: 40px;
+    color: hsl(0, 100%, 40%);
+    height: 20px;
+    line-height: 20px;
+}
+/* ================= Fullscreen gallery ================== */
+#gallery-modal-overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 5;
+    background: hsl(0, 0%, 0%, 0.90);
+}
+#close-gallery {
+    height: 60px;
+    width: 60px;
+    transform: rotate(45deg);
+    font-size: 100px;
+    color: hsl(0, 0%, 100%, 0.9);
+    cursor: pointer;
+    
+    position: fixed;
+    top: -32px;
+    right: -32px;
+    z-index: 8;
+}
+#bigSlide,
+#bigSlide img {
+    width: 80%;
+    height: 90%;
+    position: fixed;
+    top: 5%;
+    left: 10%;
+    z-index: 7;
+}
+#bigSlide img {
+    object-fit: scale-down;
+    max-width: none;
+    max-height: none;
+    height: none;
+
+}
+.gallery-modal__arrow {
+    font-size: 280px;
+    color: hsl(0, 0%, 100%, 0.7);
+    position: fixed;
+    z-index: 8;
+    top: calc(50vh - 231px);
+    cursor: pointer;
+}
+.gallery-modal__right-arrow {
+    right: 3%;
+}
+.gallery-modal__left-arrow {
+    left: 3%;
+}
+
+@media (max-width: 1200px) {
+    .gallery-modal__arrow {
+        top: calc(50vh - 148px);
+        font-size: 180px;
+    }
+    .gallery-modal__right-arrow {
+        right: 1%;
+    }
+    .gallery-modal__left-arrow {
+        left: 1%;
+    }
+}
+@media(max-width: 1160px) {
+    .container-slider {
+        display: block;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 900px) {
+    .container-slider {
+        width: 90vw;
+    }
+    .gallery-modal__arrow {
+        top: calc(50vh - 96px);
+        font-size: 120px; 
+    }
+    .gallery-modal__arrow p {
+        position: relative;
+        bottom: 20px;
+    }
+}
+@media (max-width: 750px) {
+    .container-slider {
+        height: 70vw;
+    }
+    #close-gallery {
+        font-size: 60px;
+        top: -20px;
+        right: -30px;
+    }
+    #bigSlide,
+    #bigSlide img {
+        width: 100vw;
+        left: 0;
+    }
+    .gallery-modal__arrow {
+        top: calc(50vh - 65px);
+        font-size: 100px;
+    }
+    .gallery-modal__arrow {
+        font-size: 80px;
+    }
+    
+}
+@media (max-width: 500px) {
+    .gallery-modal__arrow {
+        top: calc(50vh - 45px);
+        font-size: 80px;
+    }
+    .gallery-modal__arrow {
+        font-size: 60px;
+    }
+    .gallery-modal__arrow p {
+        bottom: 10px;
+    }
+}
+@media (max-width: 350px) {
+    .gallery-modal__arrow {
+        top: calc(50vh - 22px);
+    }
+    .gallery-modal__arrow {
+        font-size: 40px;
+    }
+    .gallery-modal__arrow p {
+        bottom: 6px;
+    }
+}
